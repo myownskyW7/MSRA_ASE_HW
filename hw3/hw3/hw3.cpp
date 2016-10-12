@@ -166,15 +166,11 @@ void dir(string path, vector<string>& files)
 	_findclose(hFile);
 	return;
 }
-int main()
+int main(int argc, char* argv[])
 {
-	int N;
-	string dirPath;
+	string dirPath(argv[1]);
+	int N = atoi(argv[2]);
 	TrieTree T;
-	cout << "input directory path:" << endl;
-	cin >> dirPath;
-	cout << "input N:" << endl;
-	cin >> N;
 	vector<string> files;
 	dir(dirPath,files);
 	cout << "total txt file: " << files.size() << endl;

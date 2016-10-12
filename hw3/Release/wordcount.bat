@@ -1,0 +1,1 @@
+wordcount.exe D:\novel 100

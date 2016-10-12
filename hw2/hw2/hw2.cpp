@@ -75,10 +75,10 @@ void Local_Bit_Sieve(int nth) {
 		}
 	}
 }
-int _tmain(int argc, _TCHAR* argv[])
+int _tmain(int argc, char* argv[])
 {
-	int nth;
-	cin >> nth;
+	int nth = atoi(argv[1]);
+	cout << nth << endl;
 	double time1 = clock();
 	Bit_Sieve(nth);
 	double time2 = clock();
